@@ -1,0 +1,27 @@
+npm install ejs
+npm init -y  
+npm install express ejs --save
+npm install sequelize
+npm install sequelize-cli -D
+npm install mysql2
+npm install --save sequelize
+npx sequelize init:models (cria pas models)
+
+ou 
+
+npm install express-generator -g
+express --view=ejs nomeProjeto
+________________________________________________________
+
+//Definicoes
+app.set("view engine", "ejs");
+var methodOverride = require("method-override");
+app.use(methodOverride("_method"));
+app.use(express.json());
+app.use(express.urlencoded(({extended: false})));
+
+________________________________________________________
+
+//alterar arquivo index do model 
+de >>>>> const config = require(__dirname + '/../config/database.js')[env];
+para >>>> const config = require("../config/database")
