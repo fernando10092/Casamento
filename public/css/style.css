@@ -62,7 +62,6 @@ h1{
     width: 80%;
     height: 500px;
     position: relative;
-    padding-bottom: 50px;
     
 }
 
@@ -124,6 +123,7 @@ h1{
     
 }
 
+
 @media only screen and (max-width: 600px) {
     .iconPage{
         width: 50px;
@@ -138,6 +138,11 @@ h1{
         width: 95%;
         height: 500px;
         position: relative;
+        
+    }
+
+    .banner{
+     
         
     }
 
