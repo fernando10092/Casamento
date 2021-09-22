@@ -57,8 +57,9 @@ h1{
     padding: 0px;
     margin: 0 auto;
     text-align: justify;
-    width: 55%;
+    width: 80%;
     height: 500px;
+    position: relative;
     
 }
 
