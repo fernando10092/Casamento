@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/teste.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +16,13 @@
 
         <img src="/img/teste.jpg" class="fotos">
 
-        <img src="/icon/menu.png" class="iconPosition">
+        <img src="/icon/menu.png" class="iconPosition" onclick="openNav()">
 
         <label class="textName"><p>Fernando & Lilian</p><p>Santo André, 24 de julho de 2022</p></label>
         
     </div>
+
+  
 
     <!-- FIM CAPA -->
 
@@ -80,6 +83,31 @@
 
          </div>
          <!-- FIM FAIXA -->
+
+
+         <!-- DRAWER -->
+
+         <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+
+          <script>
+            /* Set the width of the side navigation to 250px */
+                function openNav() {
+                 document.getElementById("mySidenav").style.width = "250px";
+                }
+    
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                }
+          </script>
+
+         <!-- FIM DRAWER-->
 
 
     </div>

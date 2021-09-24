@@ -4,6 +4,12 @@ const control = {
 
         res.render("index");
 
+    },
+
+    teste: (req, res)=>{
+
+        res.render("teste");
+
     }
 
 }

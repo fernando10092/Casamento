@@ -151,3 +151,10 @@ h1{
 
  
   }
+
+  .menuOpen{
+      float: left;
+      width: 500px;
+      height: 500px;
+      background-color: yellow;
+  }
