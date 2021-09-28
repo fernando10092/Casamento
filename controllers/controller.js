@@ -12,6 +12,24 @@ const control = {
 
     },
 
+    festa: (req, res)=>{
+
+        res.render("festa");
+
+    },
+
+    contribua: (req, res)=>{
+
+        res.render("contribua");
+
+    },
+
+    presentes: (req, res)=>{
+
+        res.render("presentes");
+
+    },
+
     teste: (req, res)=>{
 
         res.render("teste");

@@ -16,7 +16,20 @@ p{
     color: #E6E6E6;
     border: black;
     text-shadow: black;
+    text-align: justify;
+    padding: 15px;
     
+}
+
+.pViagem{
+
+    color: #E6E6E6;
+    border: black;
+    text-shadow: black;
+    text-align: justify;
+    margin: 0 auto;
+    width: 550px;
+
 }
 
 h1{
@@ -82,6 +95,33 @@ a:hover{
 .imgMain{
     width: 500px;
     height: 500px;
+}
+
+.imgViagem{
+
+    width: 300px;
+    height: 200px; 
+
+}
+
+.mainViagem{
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(/img/paris.jpeg);
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-size: cover;
+
+}
+
+.product{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gift{
+    width: 150px;
+    height: 150px;
 }
 
 @media only screen and (max-width: 1000px) {
