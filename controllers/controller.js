@@ -6,6 +6,12 @@ const control = {
 
     },
 
+    viagem: (req, res)=>{
+
+        res.render("viagem");
+
+    },
+
     teste: (req, res)=>{
 
         res.render("teste");

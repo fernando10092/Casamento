@@ -1,119 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/teste.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lilian & Fernando</title>
-</head>
-<body>
+<!-- BARRA COMPARTILHADA -->
+<%- include('./partials/header') %>
+<!-- FIM BARRA COMPARTILHADA -->
 
-    <!-- CAPA -->
+    <!-- CONTEUDO DA ESQUERDA -->
+    <div class="leftSide">
 
-    <div id="imgMain">
+      <h1>Casamento Fernando & Lilian</h1>
 
-        <img src="/img/teste.jpg" class="fotos">
-
-        <img src="/icon/menu.png" class="iconPosition" onclick="openNav()">
-
-        <label class="textName"><p>Fernando & Lilian</p><p>Santo André, 24 de julho de 2022</p></label>
+      <p> 
+        Escolhemos o dia 24/07/2022 para nos unirmos em matrimônio. 
+        Será um momento muito especial que queremos dividir com todos aqueles que nos querem bem. 
+        Nossa história começou em 2015, mas nos conhecemos um pouco antes, apesar das diferenças 
+        que havia entre nós na época isso não foi impedimento para nos apaixonarmos. Éramos dois 
+        jovens tímidos em uma noite no cinema no dia 21/04/2015 e no dia 16/05/2015 veio o tão 
+        surpreso é esperado, pedido de namoro e desde então nós não nos desgrudamos mais. 
         
-    </div>
-
+      </p>
+    
   
-
-    <!-- FIM CAPA -->
-
-    <div class="espaceIMG">
-
     </div>
+     <!-- FIM CONTEUDO DA ESQUERDA-->
 
+    <!-- CONTEUDO DA DIREITA -->
+    <aside class="rightSide">
 
-    <!-- CONTEUDO COMPLETO - 3 PARTES -->
+      <img class="iconMsg" src="/icon/msg.png">
 
+    </aside>
+     <!-- FIM DO CONTEUDO DA DIREITA-->
+
+    <!-- CONTEUDO CENTRAL-->
     <div>
 
-        <!-- LATERAL ESQUERDA-->
-        <aside class="leftContent">
+      <img class="imgMain" src="/img/play.png">
 
-            <img src="/icon/balloons.png" class="iconPage">
-
-        </aside>
-
-        <!-- FIM LATERAL DIREITA-->
-
-         <!-- LATERAL DIREITA-->
-
-         <aside class="rightContent">
-
-            <img src="/icon/paris.png" class="iconPage">
-
-        </aside>
-
-        <!-- FIM LATERAL DIREITA-->
-
-        <!-- CONTEUDO PRINCIPAL -->
-
-        <div class="mainContent">
-
-            <div class="centerPosition">
-
-                <img src="/img/lilian.jpeg" class="fotoAvatar">
-                <img src="/img/fernando.jpeg" class="fotoAvatar">
-        
-            </div>
-
-            <h1 id="titulo">Vamos nos casar</h1>
-
-            <p class="paragrafo"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-    
-            <h1>24.07.2022</h1>
-
-         </div>
-
-
-         <!-- FIM CONTEUDO PRINCIPAL-->
-
-
-         <!-- FAIXA -->
-         <div class="banner">
-
-
-         </div>
-         <!-- FIM FAIXA -->
-
-
-         <!-- DRAWER -->
-
-         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div>
-
-          <script>
-            /* Set the width of the side navigation to 250px */
-                function openNav() {
-                 document.getElementById("mySidenav").style.width = "250px";
-                }
-    
-            /* Set the width of the side navigation to 0 */
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                }
-          </script>
-
-         <!-- FIM DRAWER-->
-
-
+      <h1>24 / 07 / 2022</h1>
+      
     </div>
+    <!-- FIM CONTEUDO CENTRAL-->
 
-    <!-- FIM CONTEUDO COMPLETO - 3 PARTES -->
 
-   
-</body>
+  </body>
+   <!-- FIM DO BODY -->
+
 </html>
+ <!-- FIM HTML -->
