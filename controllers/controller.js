@@ -30,6 +30,12 @@ const control = {
 
     },
 
+    contato: (req, res)=>{
+
+        res.render("contato");
+
+    },
+
     teste: (req, res)=>{
 
         res.render("teste");

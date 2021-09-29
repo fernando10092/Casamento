@@ -12,6 +12,14 @@ html, body, h2
     
 }
 
+tr{
+    text-align: center;
+    background-color: rgba(190, 152, 189, 0.5);
+    font-size: 20px;
+
+}
+
+
 p{
     color: #E6E6E6;
     border: black;
@@ -122,6 +130,35 @@ a:hover{
 .gift{
     width: 150px;
     height: 150px;
+}
+
+.mainCenter{
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    padding: 35px;
+}
+
+.inputMsg{
+    width: 350px;
+    height: 80px;
+}
+
+.inputName{
+    width: 350px;
+    height: 30px;
+}
+
+.inputBtn{
+    width: 150px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.tabela{
+    border: solid;
+    margin: 0 auto;
+    width: 80%;
 }
 
 @media only screen and (max-width: 1000px) {

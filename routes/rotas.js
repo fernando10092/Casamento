@@ -14,6 +14,8 @@ router.get("/contribua", controller.contribua);
 
 router.get("/presentes", controller.presentes);
 
+router.get("/contato", controller.contato);
+
 router.get("/teste", controller.teste);
 
 module.exports = router;
