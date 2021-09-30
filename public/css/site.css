@@ -29,6 +29,12 @@ p{
     
 }
 
+.pMain{
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
 .pViagem{
 
     color: #E6E6E6;
@@ -109,6 +115,12 @@ a:hover{
 
     width: 300px;
     height: 200px; 
+
+}
+
+.imgCenterViagem{
+
+    text-align: center;
 
 }
 
