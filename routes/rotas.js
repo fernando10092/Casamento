@@ -18,4 +18,6 @@ router.get("/contato", controller.contato);
 
 router.get("/teste", controller.teste);
 
+router.get("/teste2", controller.teste2);
+
 module.exports = router;

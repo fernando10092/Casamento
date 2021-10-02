@@ -1,3 +1,5 @@
+const {comandos} = require("../models");
+
 const control = {
 
     index: (req, res)=>{
@@ -39,6 +41,14 @@ const control = {
     teste: (req, res)=>{
 
         res.render("teste");
+
+    },
+
+    teste2: async (req, res)=>{
+
+        let users = await comandos.findAll();
+
+        return res.render("teste2", {users});
 
     }
 
