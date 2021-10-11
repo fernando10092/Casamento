@@ -26,6 +26,36 @@ const control = {
 
     },
 
+    postDados: (req, res)=>{
+
+        let {nome, msg} = req.body;
+
+        const mysql= require("mysql");
+
+        var mysqlConnection = mysql.createConnection({
+            host: "localhost",
+            user: "root",
+            password: "123",
+            database: "BancoCasamento"
+        });
+
+        mysqlConnection.connect((err)=>{
+            if(!err){
+
+                var sql = "INSERT INTO Contatos(NomeTB, MsgTB) VALUES('"+nome+"','"+msg+"')";
+
+                mysqlConnection.query(sql, function(err,result){
+                    if(err) throw err;
+                    console.log("Nome: "+nome+" MGS: "+msg);
+                });
+
+            }else{
+                console.log("Conexao com erro "+ JSON.stringify(err, undefined,2));
+            }
+        })
+
+    },
+
     presentes: (req, res)=>{
 
         res.render("presentes");

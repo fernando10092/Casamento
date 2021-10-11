@@ -12,6 +12,8 @@ router.get("/festa", controller.festa);
 
 router.get("/contribua", controller.contribua);
 
+router.post("/contribua", controller.postDados);
+
 router.get("/presentes", controller.presentes);
 
 router.get("/contato", controller.contato);
