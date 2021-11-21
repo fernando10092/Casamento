@@ -35,7 +35,7 @@ const control = {
         var mysqlConnection = mysql.createConnection({
             host: "localhost",
             user: "root",
-            password: "123",
+            password: "12345678",
             database: "BancoCasamento"
         });
 

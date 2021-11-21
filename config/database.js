@@ -1,6 +1,6 @@
 const config = {
     username: "root",
-    password: "123456",
+    password: "12345678",
     database: "BancoTeste",
     host: "localhost",
     dialect: "mysql"
