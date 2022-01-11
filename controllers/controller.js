@@ -34,9 +34,11 @@ const control = {
 
         var mysqlConnection = mysql.createConnection({
             host: "localhost",
+            //host: "database-1.cq9c5jtttm9n.sa-east-1.rds.amazonaws.com",
             user: "root",
             password: "12345678",
             database: "BancoCasamento"
+            //database: "app"
         });
 
         mysqlConnection.connect((err)=>{
