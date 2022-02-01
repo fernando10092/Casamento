@@ -1,4 +1,5 @@
 const {comandos} = require("../models");
+const axios = require("axios");
 
 const control = {
 
@@ -26,35 +27,26 @@ const control = {
 
     },
 
-    postDados: (req, res)=>{
+    postDados: async (req, res)=>{
 
-        let {nome, msg} = req.body;
+        //Inserindo no DynamoDB da AWS
 
-        const mysql= require("mysql");
-
-        var mysqlConnection = mysql.createConnection({
-            host: "localhost",
-            //host: "database-1.cq9c5jtttm9n.sa-east-1.rds.amazonaws.com",
-            user: "root",
-            password: "12345678",
-            database: "BancoCasamento"
-            //database: "app"
-        });
-
-        mysqlConnection.connect((err)=>{
-            if(!err){
-
-                var sql = "INSERT INTO Contatos(NomeTB, MsgTB) VALUES('"+nome+"','"+msg+"')";
-
-                mysqlConnection.query(sql, function(err,result){
-                    if(err) throw err;
-                    console.log("Nome: "+nome+" MGS: "+msg);
-                });
-
-            }else{
-                console.log("Conexao com erro "+ JSON.stringify(err, undefined,2));
+        let {nome, telefone, msg} = req.body;
+    
+        axios({
+            method: 'post',
+            url: 'https://4bgm2lry4a.execute-api.sa-east-1.amazonaws.com/v1/msg',
+            data: {
+                "id": 1,
+                "Nome": nome,
+                "Telefone": telefone,
+                "Mensagem": msg
             }
-        })
+          });
+
+          //Fim de Inserindo no DynamoDB da AWS
+
+        
 
     },
 
