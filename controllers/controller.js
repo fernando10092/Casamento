@@ -29,7 +29,7 @@ const control = {
 
     postDados: async (req, res)=>{
 
-        //Inserindo no DynamoDB da AWS
+        //Inserir no DynamoDB da AWS
 
         let {nome, telefone, msg} = req.body;
     
@@ -44,7 +44,7 @@ const control = {
             }
           });
 
-          //Fim de Inserindo no DynamoDB da AWS
+          //Fim de Inserir no DynamoDB da AWS
 
         
 
