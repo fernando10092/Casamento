@@ -56,9 +56,9 @@ const control = {
 
     },
 
-    contato: (req, res)=>{
+    padrinhos: (req, res)=>{
 
-        res.render("contato");
+        res.render("padrinhos");
 
     },
 
@@ -73,6 +73,12 @@ const control = {
         let users = await comandos.findAll();
 
         return res.render("teste2", {users});
+
+    },
+
+    teste3: (req, res)=>{
+
+        res.render("teste3");
 
     }
 
