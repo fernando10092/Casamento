@@ -1,8 +1,72 @@
 <!-- BARRA COMPARTILHADA -->
-<%- include('./partials/header') %>
+<%- include('./partials/header2') %>
 <!-- FIM BARRA COMPARTILHADA -->
 
-   
+<body id="fundoContribua">
+  
+
+  <!-- CONTEUDO CENTRAL-->
+  <div class="centerContribua">
+
+    <h2>Faça um Pix</h2>
+
+    <h3>Chave: 428.042.168-45</h3>
+
+  <div class="painelContribua">
+
+    <form method="POST" action="http://casamentofernandoelilian.com.br/contribua">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome" name="nome">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Endereço de E-mail</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Telefone</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="(XX) XXXXX-XXXX" name="telefone">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="msg"></textarea>
+      </div>
+
+      <div id="liveAlertPlaceholder"></div>
+      <input class="btn btn-primary" type="reset" value="Reset">
+      
+      <input class="btn btn-primary" type="submit" value="Submit" id="liveAlertBtn">
+
+    </form>
+
+  </div>
+
+  
+  <script>
+
+var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+var alertTrigger = document.getElementById('liveAlertBtn')
+
+function alert(message, type) {
+  var wrapper = document.createElement('div')
+  wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+  alertPlaceholder.append(wrapper)
+}
+
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', function () {
+    alert('Nice, you triggered this alert message!', 'success')
+  })
+}
+
+  </script>
+     
+    
+    
+  </div>
+  <!-- FIM CONTEUDO CENTRAL-->
+
   <!-- CONTEUDO DA DIREITA -->
   <aside class="rightSide">
 
@@ -10,60 +74,6 @@
 
   </aside>
    <!-- FIM DO CONTEUDO DA DIREITA-->
-
-  <!-- CONTEUDO CENTRAL-->
-  <div class="mainCenter">
-
-    <h1>Faça um Pix</h1>
-
-    <h1>CHAVE: 428.042.168-45</h1>
-
-    <form method="POST" action="http://casamentofernandoelilian.com.br/contribua">
-
-      <label>
-        Nome
-      </label>
-  
-      <br>
-  
-      <input class="inputName" type="text" name="nome">
-  
-      <br>
-
-      <label>
-        TELEFONE
-      </label>
-  
-      <br>
-  
-      <input class="inputName" type="text" name="telefone">
-  
-      <br>
-  
-      <label>
-        Digite sua mensagem
-      </label>
-  
-      <br>
-  
-      <textarea class="inputMsg" name="msg">
-  
-      </textarea>
-  
-      <br>
-  
-      <button class="inputBtn">Limpar</button>
-  
-      <button class="inputBtn" type="submit">Enviar</button>
-
-      
-    </form>
-
-    
-    
-    
-  </div>
-  <!-- FIM CONTEUDO CENTRAL-->
 
 
 </body>
