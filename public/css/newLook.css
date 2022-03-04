@@ -163,6 +163,8 @@ label[for="bt_menu"]{
      
     }
 
+
+
 }
 
 /* FIM DA RESPONSIVIDADE */
@@ -216,19 +218,13 @@ label[for="bt_menu"]{
     
 }
 
-.imgViagem{
-
-    width: 300px;
-    height: 200px; 
-    margin: 10px;
-
-}
-
 .mainViagem{
     text-align: center;
     margin: 15px;
     background-color: rgba(0, 0, 0, 0.4);
-    width: 700px;
+    float: right;
+    width: 60%;
+   
 
 }
 
@@ -239,7 +235,92 @@ label[for="bt_menu"]{
     text-shadow: black;
     text-align: justify;
     margin: 0 auto;
-    width: 550px;
     padding: 5px;
 
 }
+
+.imgViagem{
+
+    width: 300px;
+    height: 200px; 
+    margin: 10px;
+
+}
+
+/* FIM VIAGEM */
+
+/* FESTA */
+
+#fundoFesta{
+    background-image: url(/img/fundo5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.contentFesta{
+    text-align: justify;
+    padding: 15px;
+}
+
+/* FIM FESTA */
+
+/* PRESENTES */
+
+#fundoPresentes{
+    background-image: url(/img/fundo9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.tabela{
+    border: solid;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.gift{
+    width: 150px;
+    height: 150px;
+}
+
+/* FIM PRESENTES */
+
+/* PADRINHOS */
+
+#fundoPadrinhos{
+    background-image: url(/img/arvore.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.card{
+    margin: 10px;
+}
+
+.card-img-top{
+    width: 150px;
+    height: 200px;
+}
+
+/* FIM PADRINHOS */
+
+/* CONTRIBUA */
+
+#fundoContribua{
+    background-image: url(/img/dedo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.painelContribua{
+    width: 500px;
+    text-align: center;
+    float: left;
+    margin: 10px;
+}
+
+/* FIM CONTRIBUA */
