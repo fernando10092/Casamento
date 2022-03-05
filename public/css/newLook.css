@@ -292,9 +292,14 @@ label[for="bt_menu"]{
 /* PADRINHOS */
 
 #fundoPadrinhos{
-    background-image: url(/img/arvore.jpg);
+    background-image: url(/img/fundo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position:absolute;
+    width: 100%;
+    background-color: #fafafa;
+   
+ 
     
 }
 
