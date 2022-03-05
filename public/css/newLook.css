@@ -166,8 +166,33 @@ label[for="bt_menu"]{
     }
 
 
+}
+
+/* RESPONSIVIDADE 2*/
+@media(max-width: 800px){
+
+    /* PADRINHOS */
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+#col1{
+    order: 2;
+}
+#col2{
+    order: 1;
+}
+#col3{
+    order: 3;
+}
+
+/* FIM PADRINHOS */
+
 
 }
+
 
 /* FIM DA RESPONSIVIDADE */
 
@@ -299,17 +324,40 @@ label[for="bt_menu"]{
     width: 100%;
     background-color: #fafafa;
    
- 
-    
+}
+
+.tituloPadrinhos{
+    background-color: #31408f;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 15px;
+
 }
 
 .card{
     margin: 10px;
 }
 
+.card-body-1{
+    background-color: #31408f;
+    color: #fff;
+    border: pink;
+    padding: 15px;
+    border-radius: 2px;
+}
+
+.card-body-2{
+    background-color: #d03387;
+    color: #fff;
+    border: pink;
+    padding: 15px;
+    border-radius: 2px;
+}
+
 .card-img-top{
     width: 150px;
     height: 200px;
+    
 }
 
 /* FIM PADRINHOS */
