@@ -33,10 +33,9 @@ const control = {
         //Inserir no DynamoDB da AWS
 
         let {nome, email, telefone, msg} = req.body;
-        console.log("Entrei no Let");
     
         try{
-            console.log("Entrei no Try");
+            console.log("Inserindo Dados na AWS");
             axios({
                 method: 'post',
                 url: 'https://4bgm2lry4a.execute-api.sa-east-1.amazonaws.com/v1/msg',
@@ -48,10 +47,12 @@ const control = {
                     "Mensagem": msg
                 },
               }).then(function (response) {
-                console.log(response);
-                alert("Mensagem enviada");
 
-              });
+                console.log("Dados Gravados na AWS");
+
+              }
+              
+              );
 
         }catch(erro){
 
