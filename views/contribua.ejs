@@ -14,7 +14,7 @@
 
   <div class="painelContribua">
 
-    <form method="POST" action="http://casamentofernandoelilian.com.br/contribua">
+    <form method="POST" action="/contribua">
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nome</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome" name="nome">
@@ -33,9 +33,9 @@
       </div>
 
       <div id="liveAlertPlaceholder"></div>
-      <input class="btn btn-primary" type="reset" value="Reset">
+      <input class="btn btn-primary" type="reset" value="Limpar">
       
-      <input class="btn btn-primary" type="submit" value="Submit" id="liveAlertBtn">
+      <input class="btn btn-primary" type="submit" value="Enviar" id="liveAlertBtn">
 
     </form>
 
@@ -56,7 +56,7 @@ function alert(message, type) {
 
 if (alertTrigger) {
   alertTrigger.addEventListener('click', function () {
-    alert('Nice, you triggered this alert message!', 'success')
+    alert('Sua mensagem foi enviada com sucesso', 'success')
   })
 }
 

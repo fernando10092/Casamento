@@ -1,5 +1,6 @@
 const {comandos} = require("../models");
 const axios = require("axios");
+const Connection = require("mysql/lib/Connection");
 
 const control = {
 
@@ -31,18 +32,33 @@ const control = {
 
         //Inserir no DynamoDB da AWS
 
-        let {nome, telefone, msg} = req.body;
+        let {nome, email, telefone, msg} = req.body;
+        console.log("Entrei no Let");
     
-        axios({
-            method: 'post',
-            url: 'https://4bgm2lry4a.execute-api.sa-east-1.amazonaws.com/v1/msg',
-            data: {
-                "id": 1,
-                "Nome": nome,
-                "Telefone": telefone,
-                "Mensagem": msg
-            }
-          });
+        try{
+            console.log("Entrei no Try");
+            axios({
+                method: 'post',
+                url: 'https://4bgm2lry4a.execute-api.sa-east-1.amazonaws.com/v1/msg',
+                data: {
+                    "id": 7,
+                    "Nome": nome,
+                    "Email": email,
+                    "Telefone": telefone,
+                    "Mensagem": msg
+                },
+              }).then(function (response) {
+                console.log(response);
+                alert("Mensagem enviada");
+
+              });
+
+        }catch(erro){
+
+            console.log("Erro: "+erro);
+
+        }
+        
 
           //Fim de Inserir no DynamoDB da AWS
 
