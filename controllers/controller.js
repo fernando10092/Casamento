@@ -40,7 +40,7 @@ const control = {
                 method: 'post',
                 url: 'https://4bgm2lry4a.execute-api.sa-east-1.amazonaws.com/v1/msg',
                 data: {
-                    "id": 7,
+                    "id": Math.random(),
                     "Nome": nome,
                     "Email": email,
                     "Telefone": telefone,
@@ -76,6 +76,13 @@ const control = {
     padrinhos: (req, res)=>{
 
         res.render("padrinhos");
+
+    },
+
+    painel: async (req, res)=>{
+        const api = await axios.get('https://4bgm2lry4a.execute-api.sa-east-1.amazonaws.com/v1/msg');
+        console.log(response.data);
+        res.render("painel");
 
     },
 

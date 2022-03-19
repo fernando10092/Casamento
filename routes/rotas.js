@@ -18,6 +18,8 @@ router.get("/presentes", controller.presentes);
 
 router.get("/padrinhos", controller.padrinhos);
 
+router.get("/painel", controller.painel);
+
 router.get("/teste", controller.teste);
 
 router.get("/teste2", controller.teste2);
