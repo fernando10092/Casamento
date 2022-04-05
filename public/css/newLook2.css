@@ -206,10 +206,11 @@ label[for="bt_menu"]{
     background-image: url(/img/heart4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+       
 }
 
 .carousel-item{
+    
     margin: 5px;
     width: 400px;
     height: 400px;
@@ -218,6 +219,7 @@ label[for="bt_menu"]{
 }
 
 .initiGeneral{
+    
     margin: 15px;
     float: left;
     background-color: rgba(0, 0, 0, 0.4);
@@ -382,41 +384,79 @@ label[for="bt_menu"]{
 
 /*ONE PAGE*/
 
-#viagem{
+#home{
 
-    background-color: #4682B4;
+    margin-top: 100px;
 
-}
-
-#festa{
-    background-color: red;
-}
-
-#presentes{
-    background-color: green;
-}
-
-#padrinhos{
-    background-color: green;
-}
-
-#contribua{
-    background-color: green;
-}
-
-
-section{
     width: 100%;
     float: left;
     height: 100vh;
     position: relative;
 }
 
+#viagem{
+
+    background-image: url(/img/paris3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+
+}
+
+#festa{
+    background-image: url(/img/fundo5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+#presentes{
+    background-image: url(/img/fundo9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+#padrinho{
+    background-image: url(/img/fundo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    background-color: #fafafa;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+#contribua{
+    background-image: url(/img/dedo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+
 header{
     position: fixed;
-    background-color: #d03387;
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: 999;
     width: 100%;
+    float: left;
+  
 }
 
 html{
