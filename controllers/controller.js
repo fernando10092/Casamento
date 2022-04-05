@@ -88,7 +88,7 @@ const control = {
 
     teste: (req, res)=>{
 
-        res.render("teste");
+        res.render("one");
 
     },
 
