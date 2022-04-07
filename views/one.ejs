@@ -25,7 +25,7 @@
         -->
     </header>
     <section id="home">
-        
+
 
         <!--HOME-->
 
@@ -120,12 +120,6 @@
                                 </button>
                             </div>
                             <!-- FIM CARROSSEL -->
-
-                            <div>
-                                <h1>
-                                    24/07/2022
-                                </h1>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,11 +166,17 @@
 </html>
 <!-- FIM HTML -->
 
+<div id="posHome">
+    <h1>24/07/2022</h1>
+</div>
+
 
 <!--FIM HOME-->
 
 
 </section>
+
+
 
 <section id="viagem">
 
@@ -246,6 +246,7 @@
 
 
 </section>
+
 <section id="festa">
 
     <!--FESTA-->
@@ -493,145 +494,42 @@
     <!--FIM PADRINHOS-->
 
 </section>
-<section id="contribua">
+<section id="convidados">
     <!--CONTRIBUA-->
 
-    <body id="fundoContribua">
+    <h1>Confirme presença</h1>
 
-
-        <!-- CONTEUDO CENTRAL-->
-        <div class="centerContribua">
-
-            <h2>Faça um Pix</h2>
-
-            <h3>Chave: 428.042.168-45</h3>
-
-            <div class="painelContribua">
-
-                <form method="POST" action="/contribua">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome"
-                            name="nome">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Endereço de E-mail</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com" name="email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Telefone</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                            placeholder="(XX) XXXXX-XXXX" name="telefone">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="msg"></textarea>
-                    </div>
-
-                    <div id="liveAlertPlaceholder"></div>
-                    <input class="btn btn-primary" type="reset" value="Limpar">
-
-                    <input class="btn btn-primary" type="submit" value="Enviar" id="liveAlertBtn">
-
-                </form>
-
-            </div>
-
-
-            <script>
-
-                var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-                var alertTrigger = document.getElementById('liveAlertBtn')
-
-                function alert(message, type) {
-                    var wrapper = document.createElement('div')
-                    wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
-
-                    alertPlaceholder.append(wrapper)
-                }
-
-                if (alertTrigger) {
-                    alertTrigger.addEventListener('click', function () {
-                        alert('Sua mensagem foi enviada com sucesso', 'success')
-                    })
-                }
-
-            </script>
-
-
-
-        </div>
-        <!-- FIM CONTEUDO CENTRAL-->
-
-        <!-- CONTEUDO DA DIREITA -->
-        <aside class="rightSide">
-
-            <img class="iconMsg" src="/icon/msg.png">
-
-        </aside>
-        <!-- FIM DO CONTEUDO DA DIREITA-->
-
-
-    </body>
-    <!-- FIM DO BODY -->
-
-    </html>
-    <!-- FIM HTML -->
-
-    <!--FIM CONTRIBUA-->
 </section>
 
+<!--PRESENTES-->
 <section id="presentes">
 
-    <!--PRESENTES-->
+    <div class="bloco">
 
-    <body id="fundoPresentes">
-        <!-- CONTEUDO DA DIREITA -->
-        <aside class="rightSide">
-
-            <img class="iconMsg" src="/icon/msg.png">
-
-        </aside>
-        <!-- FIM DO CONTEUDO DA DIREITA-->
-
-        <!-- CONTEUDO CENTRAL-->
-        <div>
-
-            <h1>Lista</h1>
-
-            <table class="tabela">
-
-                <tr>
-                    <th>Item</th>
-                    <th>Preço</th>
-                    <th>Descrição</th>
-                    <th>Foto</th>
-                </tr>
-                <tr>
-                    <td>Carro</td>
-                    <td>R$ 1.500.000,00</td>
-                    <td>Ferrari</td>
-                    <td><img class="gift" src="/img/ferrari2.jpg"></td>
-                </tr>
-            </table>
-
+        <div id="bloco1">
+            Lista de presentes
 
         </div>
-        <!-- FIM CONTEUDO CENTRAL-->
+
+        <div id="bloco2">
+            Lista de presentes
+            
+        </div>
+
+        <div id="bloco3">
+            PIX
+            
+            
+        </div>
 
 
-    </body>
-    <!-- FIM DO BODY -->
-
-    </html>
-    <!-- FIM HTML -->
 
 
 
-    <!--FIM PRESENTES-->
+    </div>
 
 </section>
+<!--FIM PRESENTES-->
 
 
 </body>

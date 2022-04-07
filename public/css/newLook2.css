@@ -203,7 +203,7 @@ label[for="bt_menu"]{
 
 /* INDEX */
 #fundoIndex{
-    background-image: url(/img/heart4.jpg);
+    /*background-image: url(/img/heart4.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
        
@@ -241,7 +241,7 @@ label[for="bt_menu"]{
 
 /* VIAGEM */
 #fundoViagem{
-    background-image: url(/img/paris3.jpg);
+    background-image: url(/img/flor10.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -249,7 +249,7 @@ label[for="bt_menu"]{
 
 .mainViagem{
     text-align: center;
-    margin: 15px;
+    margin-top: 100px;
     background-color: rgba(0, 0, 0, 0.4);
     float: right;
     width: 60%;
@@ -288,6 +288,7 @@ label[for="bt_menu"]{
 }
 
 .contentFesta{
+    margin-top: 100px;
     text-align: justify;
     padding: 15px;
 }
@@ -304,6 +305,7 @@ label[for="bt_menu"]{
 }
 
 .tabela{
+   
     border: solid;
     margin: 0 auto;
     width: 80%;
@@ -329,8 +331,8 @@ label[for="bt_menu"]{
 }
 
 .tituloPadrinhos{
+    margin-top: 100px;
     background-color: rgba(0, 0, 0, 0.4);
-    margin: 15px;
     border-radius: 10px;
     padding: 15px;
 
@@ -338,6 +340,7 @@ label[for="bt_menu"]{
 
 .card{
     margin: 10px;
+    
 }
 
 .card-body-1{
@@ -387,16 +390,25 @@ label[for="bt_menu"]{
 #home{
 
     margin-top: 100px;
-
     width: 100%;
     float: left;
-    height: 100vh;
     position: relative;
+    background-color: #FFFAFA;
+}
+
+#posHome{
+    padding: 25px;
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #4682B4;
+    align-content: center;
 }
 
 #viagem{
 
-    background-image: url(/img/paris3.jpg);
+    background-image: url(/img/viagem.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -430,7 +442,7 @@ label[for="bt_menu"]{
     background-image: url(/img/fundo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-   
+
     background-color: #fafafa;
     width: 100%;
     float: left;
@@ -447,6 +459,15 @@ label[for="bt_menu"]{
     position: relative;
 }
 
+#convidados{
+    background-image: url(/img/dedo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
 
 
 
@@ -464,3 +485,38 @@ html{
 }
 
 /*FIM ONE PAGE*/
+
+.bloco{
+    width: 95%;
+    height: 60%;
+    background-color: red;
+    margin: 0 auto;
+    margin-top: 30vh;
+}
+
+#bloco1{
+    background-color: #4682B4;
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    border: solid;
+  
+}
+#bloco2{
+    background-color: #4682B4;
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    border: solid;
+}
+#bloco3{
+    background-color: #4682B4;
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    border: solid;
+    
+}
