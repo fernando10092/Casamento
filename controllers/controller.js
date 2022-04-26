@@ -4,6 +4,12 @@ const Connection = require("mysql/lib/Connection");
 
 const control = {
 
+    one: (req, res)=>{
+
+        res.render("one");
+
+    },
+
     index: (req, res)=>{
 
         res.render("index");

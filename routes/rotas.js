@@ -4,7 +4,7 @@ const router = express.Router();
 
 const controller = require("../controllers/controller");
 
-router.get("/", controller.index);
+router.get("/", controller.one);
 
 router.get("/viagem", controller.viagem);
 
