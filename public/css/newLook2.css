@@ -15,6 +15,10 @@ h1{
     color: #FAD2CF;
 }
 
+h2{
+    text-align: center;
+}
+
 /* FIM GLOBAL */
 
 /* GERAL */
@@ -435,9 +439,8 @@ label[for="bt_menu"]{
 }
 
 #presentes{
-    background-image: url(/img/fundo9.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
+    background-color: #B3BAC5;
     width: 100%;
     float: left;
     height: 100vh;
@@ -507,34 +510,19 @@ html{
 .bloco{
     width: 95%;
     height: 60%;
-    background-color: red;
     margin: 0 auto;
     margin-top: 30vh;
 }
 
 #bloco1{
+    background-image: url(/img/casasbahia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #4682B4;
     float: left;
-    width: 33.33%;
+    width: 25%;
     height: 100%;
     text-align: center;
     border: solid;
   
-}
-#bloco2{
-    background-color: #4682B4;
-    float: left;
-    width: 33.33%;
-    height: 100%;
-    text-align: center;
-    border: solid;
-}
-#bloco3{
-    background-color: #4682B4;
-    float: left;
-    width: 33.33%;
-    height: 100%;
-    text-align: center;
-    border: solid;
-    
 }
