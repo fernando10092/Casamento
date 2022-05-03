@@ -12,7 +12,7 @@ li{
 
 h1{
     text-align: center;
-    color: pink;
+    color: #FAD2CF;
 }
 
 /* FIM GLOBAL */
@@ -31,7 +31,7 @@ h1{
 }
 
 .barra{
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(109, 119, 179, 0.2);
     width: 100%;
     height: 80px; 
     float: left;
@@ -53,7 +53,7 @@ h1{
     display: block;
     text-decoration: none;
     text-align: center;
-    background-color: #4682B4;
+    background-color: #FAD2CF;
     color: #fff;
     width: 100px;
     margin-left: 15px;
@@ -166,6 +166,15 @@ label[for="bt_menu"]{
      
     }
 
+    .mainViagem{
+       
+        background-color: red;
+        
+       
+    }
+
+    
+
 
 }
 
@@ -237,36 +246,38 @@ label[for="bt_menu"]{
     text-align: center;
 }
 
+.logoQuando{
+    
+    width: 150px;
+    height: 150px;
+}
+
 /* FIM INDEX */
 
 /* VIAGEM */
-#fundoViagem{
-    background-image: url(/img/flor10.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
+
 
 .mainViagem{
     text-align: center;
     margin-top: 100px;
     background-color: rgba(0, 0, 0, 0.4);
     float: right;
-    width: 60%;
+    width: 40%;
    
-
 }
 
 .pViagem{
 
-    color: #E6E6E6;
+    color: #fafafa;
     border: black;
     text-shadow: black;
     text-align: justify;
     margin: 0 auto;
     padding: 5px;
+    font-weight: bold;
 
 }
+
 
 .imgViagem{
 
@@ -402,15 +413,15 @@ label[for="bt_menu"]{
     height: 200px;
     margin-top: 50px;
     text-align: center;
-    background-color: #4682B4;
+    background-color: #B3BAC5;
     align-content: center;
 }
 
 #viagem{
 
-    background-image: url(/img/viagem.jpg);
+    background-image: url(/img/viagem.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    
     width: 100%;
     float: left;
     height: 100vh;
@@ -446,6 +457,18 @@ label[for="bt_menu"]{
     background-color: #fafafa;
     width: 100%;
     float: left;
+    position: relative;
+}
+
+#padrinho2{
+    background-image: url(/img/fundo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: #fafafa;
+    width: 100%;
+    float: left;
+    height: 100vh;
     position: relative;
 }
 
