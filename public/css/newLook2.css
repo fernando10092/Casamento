@@ -90,7 +90,7 @@ h2{
 
 label[for="bt_menu"]{
     padding: 20px;
-    background-color: #B0E0E6;
+    background-color: #FAD2CF;
     color: #fff;
     font-family: "Arial";
     text-align: center;
@@ -163,11 +163,12 @@ label[for="bt_menu"]{
         display: block;
         text-decoration: none;
         text-align: center;
-        background-color: #B0E0E6;
+        background-color: #FAD2CF;
         color: #fff;
         width: 200px;
         margin-left: 15px;
         border-radius: 10px;
+
      
     }
 
@@ -476,27 +477,15 @@ label[for="bt_menu"]{
 }
 
 #padrinho{
-    background-image: url(/img/fundo2.jpg);
+    background-image: url(/img/louvrebaixo.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-
     background-color: #fafafa;
     width: 100%;
     float: left;
     position: relative;
 }
 
-#padrinho2{
-    background-image: url(/img/fundo2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    background-color: #fafafa;
-    width: 100%;
-    float: left;
-    height: 100vh;
-    position: relative;
-}
 
 
 header{
