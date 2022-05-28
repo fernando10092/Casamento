@@ -20,7 +20,7 @@ router.get("/padrinhos", controller.padrinhos);
 
 router.get("/painel", controller.painel);
 
-router.get("/teste", controller.teste);
+router.get("/one2", controller.one2);
 
 router.get("/teste2", controller.teste2);
 

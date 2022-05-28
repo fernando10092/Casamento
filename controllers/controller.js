@@ -2,11 +2,18 @@ const {comandos} = require("../models");
 const axios = require("axios");
 const Connection = require("mysql/lib/Connection");
 
+
 const control = {
 
     one: (req, res)=>{
 
-        res.render("one");
+        res.render("one2");
+
+    },
+
+    one2: (req, res)=>{
+
+        res.render("one2");
 
     },
 
@@ -86,11 +93,57 @@ const control = {
     },
 
     painel: async (req, res)=>{
-        const api = await axios.get('https://4bgm2lry4a.execute-api.sa-east-1.amazonaws.com/v1/msg');
-        console.log(response.data);
-        res.render("painel");
 
+        var nomes;
+        
+        const url = "https://4bgm2lry4a.execute-api.sa-east-1.amazonaws.com/v1/msg";
+
+        var variavel = function getUser(){
+
+            var nomesData;
+
+            axios.get(url)
+            .then(response =>{
+                var dados = response.data;
+                //console.log(Object.values(dados));
+                //console.log(Object.keys(dados));
+                //console.log(typeof dados);
+                //console.log(dados);
+                //console.log(dados.Items[1]);
+                
+                dados.Items.forEach(element => {
+
+                    nomesData = element['Nome'];
+
+                    //console.log("nomesData 1 "+nomesData);
+                  
+                    return nomesData;
+                                         
+                });
+
+                //console.log("nomesData 2 "+nomesData);
+
+                return nomesData;
+                                            
+        }
+        
+        )
+        .catch(error => console.log(error));
+
+         }
+
+         //getUser();
+         
+         nomes = variavel;
+
+         console.log("nomes: "+nomes.call());
+
+         return res.render("painel", {nomes}); 
+
+         
     },
+
+    //FIM PAINEL
 
     teste: (req, res)=>{
 
