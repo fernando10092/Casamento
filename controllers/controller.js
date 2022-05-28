@@ -17,6 +17,12 @@ const control = {
 
     },
 
+    qrcode: (req, res)=>{
+
+        res.render("qrcode");
+
+    },
+
     index: (req, res)=>{
 
         res.render("index");

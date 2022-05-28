@@ -22,6 +22,8 @@ router.get("/painel", controller.painel);
 
 router.get("/one2", controller.one2);
 
+router.get("/qrcode", controller.qrcode);
+
 router.get("/teste2", controller.teste2);
 
 router.get("/teste3", controller.teste3);
