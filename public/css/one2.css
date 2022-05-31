@@ -313,6 +313,13 @@ label[for="bt_menu"] {
 
 }
 
+#dFundoHistoria{
+    text-align: justify;
+    padding: 50px;
+    width: 100%;
+    float: left;
+}
+
 
 .pViagem {
 
@@ -347,13 +354,23 @@ label[for="bt_menu"] {
     float: left;
     min-height: 100vh;
     position: relative;
+    text-align: justify;
 }
 
 #eladoViagem {
     margin: 0 auto;
     padding: 50px;
-    width: 50%;
+    width: 100cw;
+  
 
+}
+
+#dFundoSobre{
+   
+    text-align: center;
+    float: left;
+    width: 100vw;
+    padding: 25px;
 }
 
 .fontTitleFesta {
@@ -391,24 +408,16 @@ label[for="bt_menu"] {
 
 /* PRESENTES */
 
-#fundoPresentes {
-    background-image: url(/img/fundo9.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+#presentes {
 
+    background-color: #FDEDEC;
+    width: 100%;
+    float: left;
+    position: relative;
 }
 
-.tabela {
 
-    border: solid;
-    margin: 0 auto;
-    width: 80%;
-}
 
-.gift {
-    width: 150px;
-    height: 150px;
-}
 
 /* FIM PRESENTES */
 
@@ -421,7 +430,7 @@ label[for="bt_menu"] {
     width: 100%;
     float: left;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
 }
 
@@ -465,9 +474,10 @@ label[for="bt_menu"] {
 }
 
 .avatarFoto {
-    width: 300px;
-    max-height: 300px;
+    width: 250px;
+    max-height: 250px;
     border-radius: 50%;
+    margin: 25px;
 }
 
 .avatarPlus {
@@ -495,7 +505,7 @@ label[for="bt_menu"] {
     width: 100%;
     float: left;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
 }
 
@@ -503,35 +513,48 @@ label[for="bt_menu"] {
 
     margin-top: 5%;
     width: 400px;
-    height: 80vh;
+    min-height: 80vh;
 
 }
 
 /* FIM LUA MEL */
 
-/* CONTRIBUA */
+/* CONTATO */
 
-#fundoContato {
+#convidados{
+    float: left;
+    width: 100%;
+ 
+
+}
+
+#fundoConvidado{
+    width: 100vw;
+   
+}
+
+#eFundoContato {
+    width: 80%;
+    float: left;
+    margin: 50px;
+
+   
+}
+
+#dFundoContato {
 
     background-image: url(/img/hand.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
-
-}
-
-
-.centerContribua {
-    max-width: 90%;
-    min-width: 200px;
-    text-align: center;
+    width: 100%;
+    min-height: 100vh;
     float: left;
-    margin-top: 10px;
-    margin-left: 50px;
+
 }
 
-/* FIM CONTRIBUA */
+/*FIM CONTATO */
+
+
 
 /*ONE PAGE*/
 
@@ -558,14 +581,7 @@ label[for="bt_menu"] {
 
 
 
-#presentes {
 
-    background-color: #FDEDEC;
-    width: 100%;
-    float: left;
-    height: 100vh;
-    position: relative;
-}
 
 header {
     /*position: fixed;*/

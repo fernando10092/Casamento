@@ -13,7 +13,7 @@
     <header>
 
         <!-- BARRA COMPARTILHADA -->
-        
+
 
     </header>
 
@@ -21,20 +21,20 @@
     <section id="fundoIndex">
         <!-- BARRA COMPARTILHADA -->
         <%- include('./partials/headersOne2') %>
-        
-        <div class="container-sm">
-            <div class="row" id="painelInicial">
-                <div class="col" id="efundoindex">
+
+            <div class="container-sm">
+                <div class="row" id="painelInicial">
+                    <div class="col" id="efundoindex">
 
 
+                    </div>
+
+                    <div class="col" id="dfundoindex">
+
+                    </div>
                 </div>
 
-                <div class="col" id="dfundoindex">
-
-                </div>
             </div>
-
-        </div>
 
 
 
@@ -109,7 +109,7 @@
             </div>
 
 
-            <div class="col">
+            <div class="col" id="dFundoSobre">
                 <img src="/img/local.png" class="imgEvento">
             </div>
         </div>
@@ -134,13 +134,13 @@
 
                 </div>
 
-                <div class="col">
+                <div class="col" id="dFundoHistoria">
 
-                    <h1 class="fontSubFesta">NOSSA HISTÓRIA</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. It has survived not only five centuries.</p>
+                    <h2>NOSSA HISTÓRIA</h2>
+                    <p>Nossa história começou em 2015, mas nos conhecemos um pouco antes, apesar das diferenças
+                        que havia entre nós na época isso não foi impedimento para nos apaixonarmos. Éramos dois
+                        jovens tímidos em uma noite no cinema no dia 21/04/2015 e no dia 16/05/2015 veio o tão
+                        surpreso é esperado, pedido de namoro e desde então nós não nos desgrudamos mais.</p>
 
                 </div>
             </div>
@@ -171,7 +171,7 @@
 
                 <div class="col">
 
-                    <h1>Madrinhas e Padrinhos</h1>
+                    <h2>Madrinhas e Padrinhos</h2>
 
                     <img src="/img/plus.svg" class="avatarPlus">
 
@@ -278,84 +278,71 @@
 
     <section id="convidados">
 
-        <div class="container-sm">
+        <div class="container-sm" id="fundoConvidado">
             <div class="row">
-                <div class="col">
-
-                    <div class="centerContribua">
-
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-
-                        <h2>Contato</h2>
-
-                        <div class="painelContribua">
-
-                            <form method="POST" action="/contribua">
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="Nome" name="nome">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Endereço de E-mail</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="name@example.com" name="email">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Telefone</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="(XX) XXXXX-XXXX" name="telefone">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                        name="msg"></textarea>
-                                </div>
-
-                                <div id="liveAlertPlaceholder"></div>
-                                <input class="btn btn-primary" type="reset" value="Limpar">
-
-                                <input class="btn btn-primary" type="submit" value="Enviar" id="liveAlertBtn">
-
-                            </form>
-
-                        </div>
+                <div class="col" id="eFundoContato">
 
 
-                        <script>
+                    <h2>Contato</h2>
 
-                            var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-                            var alertTrigger = document.getElementById('liveAlertBtn')
+                    <div>
 
-                            function alert(message, type) {
-                                var wrapper = document.createElement('div')
-                                wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+                        <form method="POST" action="/contribua">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome"
+                                    name="nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Endereço de E-mail</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Telefone</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="(XX) XXXXX-XXXX" name="telefone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    name="msg"></textarea>
+                            </div>
 
-                                alertPlaceholder.append(wrapper)
-                            }
+                            <div id="liveAlertPlaceholder"></div>
+                            <input class="btn btn-primary" type="reset" value="Limpar">
 
-                            if (alertTrigger) {
-                                alertTrigger.addEventListener('click', function () {
-                                    alert('Sua mensagem foi enviada com sucesso', 'success')
-                                })
-                            }
+                            <input class="btn btn-primary" type="submit" value="Enviar" id="liveAlertBtn">
 
-                        </script>
-
-
+                        </form>
 
                     </div>
-                    <!-- FIM CONTEUDO CENTRAL-->
 
 
+                    <script>
+
+                        var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+                        var alertTrigger = document.getElementById('liveAlertBtn')
+
+                        function alert(message, type) {
+                            var wrapper = document.createElement('div')
+                            wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+
+                            alertPlaceholder.append(wrapper)
+                        }
+
+                        if (alertTrigger) {
+                            alertTrigger.addEventListener('click', function () {
+                                alert('Sua mensagem foi enviada com sucesso', 'success')
+                            })
+                        }
+
+                    </script>
 
 
                 </div>
 
-                <div class="col" id="fundoContato">
+                <div class="col" id="dFundoContato">
 
 
 
