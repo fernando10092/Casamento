@@ -31,7 +31,7 @@ h2 {
     margin: 30px;
     width: 55px;
     height: 55px;
-    cursor: pointer;
+
 
 
 }
@@ -41,9 +41,9 @@ h2 {
     width: 100%;
     height: 80px;
     float: right;
-   
-  
     
+
+
 
 }
 
@@ -52,7 +52,7 @@ h2 {
     width: 100%;
     height: 50px;
     font-family: 'Arial';
-    
+
 
 
 }
@@ -67,7 +67,7 @@ h2 {
     max-width: 170px;
     margin-left: 15px;
     border-radius: 10px;
-    
+
 
 
 }
@@ -75,7 +75,7 @@ h2 {
 
 .menu ul {
     list-style: none;
-    
+
 }
 
 .menu ul li {
@@ -130,32 +130,7 @@ label[for="bt_menu"] {
 /* RESPONSIVIDADE */
 @media(max-width: 1280px) {
 
-    #painelInicial{
-        width: 100%;
-        height: 100vh;
-        margin-top: 0px;
-        margin-bottom: 500px;
-        float: left;
-        position: absolute;
-        display: block;
-        
-        
-    }
 
-    .posHome {
-        padding: 25px;
-        width: 100%;
-        height: 120px;
-        margin-top: 5000px;
-        text-align: center;
-        background-color: #212C46;
-        align-content: center;
-        float: left;
-        position: relative;
-        display: block;
-       
-        
-    }
 
 
 
@@ -262,9 +237,19 @@ label[for="bt_menu"] {
     background-image: url(/img/n_fundo1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
     text-align: center;
+    float: left;
+
+
+}
+
+#painelInicial {
+    width: 100vw;
+    min-height: 100vh;
+    float: left;
+   
 }
 
 #efundoindex {
@@ -272,9 +257,10 @@ label[for="bt_menu"] {
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
-    margin-top: 200px;
-    padding-top: 50px;
     width: 100%;
+    float: left;
+   
+
 
 
 }
@@ -283,10 +269,12 @@ label[for="bt_menu"] {
     background-image: url(/img/n_fundod.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100vh;
-    margin-top: -30px;
-    padding-top: 40px;
-    width: 100%;
+    max-height: 100vh;
+    min-height: 100%;
+    max-width: 100%;
+    float: left;
+  
+
 }
 
 
@@ -361,26 +349,26 @@ label[for="bt_menu"] {
     position: relative;
 }
 
-#eladoViagem{
+#eladoViagem {
     margin: 0 auto;
     padding: 50px;
     width: 50%;
-  
+
 }
 
-.fontTitleFesta{
+.fontTitleFesta {
     color: #1B365D;
     text-align: left;
     font-size: 28px;
 }
 
-.fontSubFesta{
+.fontSubFesta {
     color: #FAD2CF;
     text-align: left;
     font-size: 24px;
 }
 
-.tableViagem{
+.tableViagem {
     text-align: left;
     width: 500px;
 }
@@ -391,7 +379,7 @@ label[for="bt_menu"] {
     padding: 15px;
 }
 
-.imgEvento{
+.imgEvento {
     margin-top: 50px;
     width: 95%;
     height: 80vh;
@@ -437,7 +425,7 @@ label[for="bt_menu"] {
     text-align: center;
 }
 
-#padrinhosContent{
+#padrinhosContent {
     margin-top: 25vh;
 }
 
@@ -476,23 +464,23 @@ label[for="bt_menu"] {
 
 }
 
-.avatarFoto{
+.avatarFoto {
     width: 300px;
     max-height: 300px;
     border-radius: 50%;
 }
 
-.avatarPlus{
+.avatarPlus {
     width: 80px;
     max-height: 90px;
-   
+
 }
 
-.avatarSeta{
+.avatarSeta {
     width: 15px;
     max-height: 30px;
     margin-top: 5vh;
-    
+
 }
 
 /* FIM PADRINHOS */
@@ -511,18 +499,19 @@ label[for="bt_menu"] {
     text-align: center;
 }
 
-.parisFoto{
+.parisFoto {
 
     margin-top: 5%;
     width: 400px;
     height: 80vh;
 
 }
+
 /* FIM LUA MEL */
 
 /* CONTRIBUA */
 
-#fundoContato{
+#fundoContato {
 
     background-image: url(/img/hand.png);
     background-repeat: no-repeat;
@@ -552,15 +541,16 @@ label[for="bt_menu"] {
     padding: 25px;
     width: 100%;
     height: 120px;
-    margin-top: 50px;
     text-align: center;
     background-color: #212C46;
     align-content: center;
-   
-    
+    float: left;
+
+
+
 }
 
-.frase{
+.frase {
     color: #FDEDEC;
 }
 
