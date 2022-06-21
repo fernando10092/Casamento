@@ -361,6 +361,7 @@ label[for="bt_menu"] {
     margin: 0 auto;
     padding: 50px;
     width: 100cw;
+    float: left;
   
 
 }
