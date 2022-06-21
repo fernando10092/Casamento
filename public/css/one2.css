@@ -523,7 +523,6 @@ label[for="bt_menu"] {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #fafafa;
-  
     width: 100vw;
     float: left;
     position: relative;
@@ -534,7 +533,7 @@ label[for="bt_menu"] {
 .parisFoto {
 
     margin-top: 5%;
-    width: 400px;
+    width: 40%;
     min-height: 80vh;
 
 }
