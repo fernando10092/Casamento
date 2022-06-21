@@ -389,6 +389,7 @@ label[for="bt_menu"] {
 .tableViagem {
     text-align: left;
     width: 500px;
+    float: left;
 }
 
 .contentFesta {
