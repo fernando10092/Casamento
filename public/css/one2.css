@@ -202,15 +202,6 @@ label[for="bt_menu"] {
 @media(max-width: 800px) {
 
 
-    #dFundoSobre{
-        
-        height: 70%;
-        text-align: center;
-        float: left;
-        width: 100vw;
-        padding: 25px;
-    }
-
     /* PADRINHOS */
 
     .row {
