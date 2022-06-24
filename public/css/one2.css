@@ -12,7 +12,8 @@ li {
 
 h1 {
     text-align: center;
-    color: #FAD2CF;
+    
+    color: palevioletred;
 }
 
 h2 {
@@ -199,6 +200,16 @@ label[for="bt_menu"] {
 
 /* RESPONSIVIDADE 2*/
 @media(max-width: 800px) {
+
+
+    #dFundoSobre{
+        
+        height: 70%;
+        text-align: center;
+        float: left;
+        width: 100vw;
+        padding: 25px;
+    }
 
     /* PADRINHOS */
 
