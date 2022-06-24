@@ -131,14 +131,11 @@ label[for="bt_menu"] {
 @media(max-width: 1280px) {
 
 
-
-
-
     label[for="bt_menu"] {
         display: block;
     }
 
-    #bt_menu:checked~.menu {
+    #bt_menu:checked ~ .menu {
         margin-left: 0;
     }
 
@@ -175,6 +172,8 @@ label[for="bt_menu"] {
         width: 200px;
         margin-left: 15px;
         border-radius: 10px;
+        z-index: 10; 
+        position:relative;
 
 
     }
