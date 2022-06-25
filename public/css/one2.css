@@ -299,7 +299,7 @@ label[for="bt_menu"] {
     background-color: #FDEDEC;
     width: 100%;
     float: left;
-    height: 650px;
+    min-height: 100vh;
 
 
 }
