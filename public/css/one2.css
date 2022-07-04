@@ -12,7 +12,7 @@ li {
 
 h1 {
     text-align: center;
-    
+
     color: palevioletred;
 }
 
@@ -42,7 +42,7 @@ h2 {
     width: 100%;
     height: 80px;
     float: right;
-    
+
 
 
 
@@ -136,7 +136,7 @@ label[for="bt_menu"] {
         display: block;
     }
 
-    #bt_menu:checked ~ .menu {
+    #bt_menu:checked~.menu {
         margin-left: 0;
     }
 
@@ -173,8 +173,8 @@ label[for="bt_menu"] {
         width: 200px;
         margin-left: 15px;
         border-radius: 10px;
-        z-index: 10; 
-        position:relative;
+        z-index: 10;
+        position: relative;
 
 
     }
@@ -233,6 +233,39 @@ label[for="bt_menu"] {
 /* FIM GERAL */
 
 
+/* LANDING */
+#fundoLanding {
+    background-image: url(/img/n_fundo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+    width: 100vw;
+    text-align: center;
+
+
+
+
+}
+
+#painelLanding {
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+   
+
+
+}
+
+.btn-outline-primary{
+    width: 90%;
+    margin: 15px;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+/* FIM LANDING */
+
 /* INDEX */
 #fundoIndex {
     background-image: url(/img/n_fundo1.png);
@@ -250,7 +283,7 @@ label[for="bt_menu"] {
     width: 100vw;
     min-height: 100vh;
     float: left;
-   
+
 }
 
 #efundoindex {
@@ -260,7 +293,7 @@ label[for="bt_menu"] {
     height: 100vh;
     width: 100%;
     float: left;
-   
+
 
 
 
@@ -274,7 +307,7 @@ label[for="bt_menu"] {
     min-height: 100%;
     max-width: 100%;
     float: left;
-  
+
 
 }
 
@@ -314,7 +347,7 @@ label[for="bt_menu"] {
 
 }
 
-#dFundoHistoria{
+#dFundoHistoria {
     text-align: justify;
     padding: 50px;
     width: 100%;
@@ -363,17 +396,17 @@ label[for="bt_menu"] {
     padding: 50px;
     width: 100cw;
     float: left;
-  
+
 
 }
 
-#nossaFoto{
+#nossaFoto {
     width: 100%;
     height: 80%;
 }
 
-#dFundoSobre{
-   
+#dFundoSobre {
+
     text-align: center;
     float: left;
     width: 100vw;
@@ -507,16 +540,16 @@ label[for="bt_menu"] {
     margin: 25px;
 }
 
-.carousel-control-prev-icon{
+.carousel-control-prev-icon {
     color: black;
     background-color: #4682B4;
-    z-index: 999; 
+    z-index: 999;
 }
 
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     color: black;
     background-color: #d03387;
-    z-index: 999; 
+    z-index: 999;
 
 }
 
@@ -549,16 +582,16 @@ label[for="bt_menu"] {
 
 /* CONTATO */
 
-#convidados{
+#convidados {
     float: left;
     width: 100%;
- 
+
 
 }
 
-#fundoConvidado{
+#fundoConvidado {
     width: 100vw;
-   
+
 }
 
 #eFundoContato {
@@ -566,7 +599,7 @@ label[for="bt_menu"] {
     float: left;
     margin: 50px;
 
-   
+
 }
 
 #dFundoContato {
