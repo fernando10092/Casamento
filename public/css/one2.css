@@ -238,21 +238,33 @@ label[for="bt_menu"] {
     background-image: url(/img/n_fundo1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
     text-align: center;
+ 
 
+}
 
+#efundoLanding {
+    background-image: url(/img/n_fundoe.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+ 
+    margin-top: 50px;
 
 
 }
 
-#painelLanding {
-    width: 400px;
-    height: 400px;
+#dfundoLanding {
+ 
+      
+    float: left;
     margin-top: 100px;
+    max-height: 80%;
+    max-width: 80%;
    
-
+    
 
 }
 
